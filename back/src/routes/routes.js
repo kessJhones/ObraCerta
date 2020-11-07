@@ -7,7 +7,7 @@ const testUserController = require('../controllers/testUserController')//temp
 router.get('/', (req, res) => res.send("hello"))
 
 // Rotas de cadastro e login de usuário
-router.get('/registrar', (req, res) => res.send("Registrar"));
+router.get('/registrar', UserController.list);
 router.post('/registrar', UserController.store);
 
 router.get('/login', (req, res) => res.send('Logar'));

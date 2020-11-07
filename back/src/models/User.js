@@ -11,7 +11,7 @@ class User extends Model{
       },
       nomeCompleto: DataTypes.STRING(100),
       email: DataTypes.STRING(50),
-      hashSenha: DataTypes.STRING,
+      hashSenha: DataTypes.STRING(),
       telefone: DataTypes.STRING(20),
 
       criadoEm:{

@@ -1,5 +1,4 @@
 const yup = require('yup')
-
 const User = require('../models/User');
 
 // Usar o yup para validar a entrada de dados. olhar a documentação do modulo para saber como utiliza-lo
@@ -9,7 +8,7 @@ class UserController {
   async store (req, res) {
     // Responsável por cadastrar um usuário
 
-    const schema = yup.object.shape({
+    const schema = yup.object().shape({
       email: yup.string()
       .email()
       .max(50)
@@ -41,7 +40,7 @@ class UserController {
 
   async list(req, res) {
 
-    userList = await User.findAll()
+    var userList = await User.findAll()
 
     return res.json({ userList });
 
