@@ -10,12 +10,10 @@ export default createGlobalStyle`
     padding: 0;
     outline: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 body {
     background: #E5E5E5 url(${trianguloBackground}) no-repeat top;
     -webkit-font-smoothing: antialiased;
-
 }
 body, input, button {
     font: 16px Roboto, sans-serif;
