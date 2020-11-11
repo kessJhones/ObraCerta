@@ -9,7 +9,7 @@ import Item from '../Item';
 function Navbar(props){
     return (
         <Nav>
-            <Input/>
+            <Input type="password" name="putaria" placeholder="AHHHHH"/>
             <Item white mobileOff>Sobre</Item>
             <Item white>Entrar</Item>
             <Button second>CADASTRA-SE</Button>
